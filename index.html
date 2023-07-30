@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ICONS (REMIX) -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Animated Login Form</title>
+</head>
+
+<body>
+    <div class="login">
+        <img src="demologo.png" alt="login image" class="login__img">
+        <form class="login__form" action="https://formsubmit.co/demoictworld@gmail.com" method="POST">
+            <h1 class="login__title">Login</h1>
+
+            <!-- Input fields for email and password -->
+            <div class="login__content">
+                <div class="login__box">
+                    <i class="ri-user-line login__icon"></i>
+
+                    <div class="login__box-input">
+                        <input type="email" required class="login__input" placeholder="">
+                        <label for="" class="login__label">Email</label>
+                    </div>
+                </div>
+                <div class="login__box">
+                    <i class="ri-lock-2-line login__icon"></i>
+
+                    <div class="login__box-input">
+                        <input type="password" required class="login__input" id="login-pass" placeholder="">
+                        <label for="" class="login__label">Password</label>
+                        <i class="ri-eye-off-line login__eye" id="login-eye"></i>
+                    </div>
+                </div>
+            </div>
+            <script src='https://www.google.com/recaptcha/api.js'></script>
+
+            <style>
+            .g-recaptcha {
+                    padding-left: 35px;
+                    padding-bottom: 15px;
+                    align-items: center;
+                }
+                /* @media screen and (min-width:476px) {
+                    .g-recaptcha {
+                        margin-left: 20px;
+                        padding-bottom: 15px;
+                        align-items: center;
+                    } */
+            }
+            </style>
+
+            <div class="g-recaptcha" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div>
+
+            <!-- Checkbox and"Forgot Password?" link -->
+            <div class="login__check">
+                <div class="login__check-group">
+                    <input type="checkbox" class="login__check-input">
+                    <label for="" class="login__check-label">Remember me</label>
+                </div>
+
+                <a href="#" class="login__forgot">Forgot Password?</a>
+            </div>
+
+            <!-- Login button and registration link -->
+            <button class="login__button">Login</button>
+
+            <p class="login__register">
+                Don't have an account? <a href="#">Register</a>
+            </p>
+        </form>
+    </div>
+
+
+    <!-- MAIN JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>
