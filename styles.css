@@ -114,7 +114,7 @@ a {
 }
 
 .login__input {
-    width: 100px;
+    width: 100%;
     padding-block: .8rem;
     background: none;
     color: var(--white-color);
